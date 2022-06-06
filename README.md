@@ -12,6 +12,7 @@ And somehow got a place for diary stuff I suppose.
 * Income
   - What it will store
     - Date
+    - Type (Cash, Bank)
     - Income
     - Category
     - Note
@@ -19,6 +20,7 @@ And somehow got a place for diary stuff I suppose.
 * Expense
   - What it will store
     - Date
+    - Type (Cash, Bank)
     - Expense
     - Category
     - Note

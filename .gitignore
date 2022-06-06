@@ -1,2 +1,3 @@
 manavis
-database.db
+*.db
+*.sql

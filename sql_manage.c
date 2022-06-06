@@ -31,7 +31,7 @@ void create_income_table(sqlite3 *database) {
  
    const char *statement =
     "DROP TABLE IF EXISTS Income;"
-    "CREATE TABLE Income(Date DATE, Income INTEGER, Category VARCHAR(255), Note VARCHAR(255));";
+    "CREATE TABLE Income(Date DATE, Type VARCHAR(255), Income INTEGER, Category VARCHAR(255), Note VARCHAR(255));";
   
   return_code = sqlite3_exec(database, statement, 0, 0, &err_msg);
 
@@ -51,7 +51,7 @@ void create_expense_table(sqlite3 *database) {
 
   const char *statement =
     "DROP TABLE IF EXISTS Expense;"
-    "CREATE TABLE Expense(Date DATE, Expense INTEGER, Category VARCHAR(255), Note VARCHAR(255));";
+    "CREATE TABLE Expense(Date DATE, Type VARCHAR(255), Expense INTEGER, Category VARCHAR(255), Note VARCHAR(255));";
   
   return_code = sqlite3_exec(database, statement, 0, 0, &err_msg);
 
