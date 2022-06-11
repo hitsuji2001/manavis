@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CXX="${CXX:-g++}"
+CXX="${CXX:-gcc}"
 SRC_APP="./*.c"
 CFLAGS="-Werror -Wall -Wextra -pedantic -ggdb"
 OFLAGS="-lsqlite3"
